@@ -1,0 +1,208 @@
+Created At: 2026-08-18T21:15:10+05:30
+Completed At: 2026-08-18T21:15:10+05:30
+File Path: `file:///d:/aa-enterprises/src/data.js`
+Total Lines: 13870
+Total Bytes: 515835
+Showing lines 1 to 200
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: export const brands = [
+2:   {
+3:     name: "Schneider",
+4:     logo: "Schneider",
+5:   },
+6:   {
+7:     name: "Omron",
+8:     logo: "OMRON",
+9:   },
+10:   {
+11:     name: "Resonance",
+12:     logo: "RESONANCE",
+13:   },
+14:   {
+15:     name: "Sibass",
+16:     logo: "SIBASS",
+17:   },
+18:   {
+19:     name: "Jigo",
+20:     logo: "JIGO",
+21:   },
+22: ];
+23: 
+24: export const categories = [
+25:   {
+26:     name: "Schneider LC1E Contactors",
+27:     image: "/images/lc1e_family.jpg",
+28:     description: "Schneider Easy TeSys LC1E Contactors.",
+29:   },
+30:   {
+31:     name: "Schneider LC1D Contactors",
+32:     image: "/images/lc1d09bd.png",
+33:     description: "Schneider TeSys D Contactors.",
+34:   },
+35:   {
+36:     name: "Schneider LRE Overload Relays",
+37:     image: "/images/easy_tesys_protect.jpg",
+38:     description: "Schneider Easy TeSys LRE Thermal Relays.",
+39:   },
+40:   {
+41:     name: "Schneider LRD Overload Relays",
+42:     image: "/images/tesys_lrd.jpg",
+43:     description: "Schneider TeSys Deca LRD Thermal Relays.",
+44:   },
+45:   {
+46:     name: "Schneider Control Relays (LADN)",
+47:     image: "/images/tesys_ladn.jpg",
+48:     description: "Schneider Auxiliary Contact Blocks and Relays.",
+49:   },
+50:   {
+51:     name: "Schneider Harmony Push Buttons",
+52:     image: "/images/harmony_push_button.jpg",
+53:     description: "Schneider Harmony 22mm Push Buttons.",
+54:   },
+55:   {
+56:     name: "Sibass AC Contactors",
+57:     image: "/images/sibass_placeholder.jpg",
+58:     description: "Sibass Electric AC Contactors.",
+59:   },
+60:   {
+61:     name: "Sibass LED Indicators",
+62:     image: "/images/sibass_placeholder.jpg",
+63:     description: "Sibass 22.5mm LED Indicating Lamps.",
+64:   },
+65:   {
+66:     name: "Sibass Proximity Sensors",
+67:     image: "/images/sensors.png",
+68:     description: "Sibass Inductive Proximity Sensors.",
+69:   },
+70:   {
+71:     name: "Jigo Tower Lights",
+72:     image: "/images/jigo-jg5088-3tier.jpg",
+73:     description: "Jigo Industrial Warning Tower Lights.",
+74:   },
+75:   {
+76:     name: "Omron Limit Switches",
+77:     image: "/images/limit_switch_omron.png",
+78:     description: "Omron Precision Limit Switches.",
+79:   },
+80:   {
+81:     name: "Resonance Cooling Fans",
+82:     image: "/images/cooling_fan_resonance.png",
+83:     description: "Resonance AC Axial Cooling Fans.",
+84:   },
+85:   {
+86:     name: "Bharat Plugs & Sockets",
+87:     image: "/images/plug_socket_bharat.png",
+88:     description: "Bharat Industrial Heavy Duty Plugs & Sockets.",
+89:   },
+90:   {
+91:     name: "Industrial Enclosures & Castings",
+92:     image: "/images/enclosures.png",
+93:     description:
+94:       "Electro MT BOC Casting Boxes, COB Series Pendants, and Wire Mesh Guards.",
+95:   },
+96:   {
+97:     name: "Sensors & Limit Switches",
+98:     image: "/images/sensors.png",
+99:     description:
+100:       "M18 Proximity Sensors, Limit Switches, and Photoelectric Sensors.",
+101:   },
+102:   {
+103:     name: "Sibass Cooling Fans",
+104:     image: "/images/sibass_placeholder.jpg",
+105:     description:
+106:       "High performance AC and DC cooling fans for electrical panels.",
+107:   },
+108:   {
+109:     name: "Jigo Heavy Duty Connectors",
+110:     image: "/images/jigo_accessories.png",
+111:     description:
+112:       "Multipole Heavy Duty Connectors for harsh industrial environments.",
+113:   },
+114:   {
+115:     name: "Sibass Industrial Plug & Sockets",
+116:     image: "/images/sibass_placeholder.jpg",
+117:     description: "Industrial plugs, sockets and connectors.",
+118:   },
+119:   {
+120:     name: "Jigo Industrial Plug & Sockets",
+121:     image: "/images/jigo_accessories.png",
+122:     description:
+123:       "Jigo Industrial plugs, sockets and connectors for reliable power connections.",
+124:   },
+125:   {
+126:     name: "Cooling Fans & Sockets",
+127:     image: "/images/cooling_fan_resonance.png",
+128:     description: "Industrial Axial Cooling Fans and Heavy Duty Plug Sockets.",
+129:   },
+130: ];
+131: 
+132: export const products = [
+133:   {
+134:     id: "lc1e0601",
+135:     name: "Schneider Electric Easy TeSys LC1E0601",
+136:     brand: "Schneider",
+137:     category: "Schneider LC1E Contactors",
+138:     model: "LC1E0601",
+139:     description:
+140:       "Schneider Electric Easy TeSys LC1E0601 is a 3-pole industrial contactor designed for reliable AC-3 motor control and switching applications.",
+141:     image: "/images/lc1e0601.jpg",
+142:     features: [
+143:       "Series: Schneider EasyPact TVS (Essential motor control).",
+144:       "Model: LC1E0601 - High-value AC contactor optimized for standard industrial applications.",
+145:       "Coil Voltages Available: 24V, 48V, 110V, 220V, 380V, 415V, and 440V AC options.",
+146:       "Operational Current (AC-3): 6A continuous rating for driving motors and inductive loads.",
+147:       "Pole Configuration: 3P with 3NO ensuring robust power distribution.",
+148:       "Auxiliary Contacts: Built-in 1NC for direct integration with control signaling logic.",
+149:       "Insulation Voltage (Ui): Rated up to 690V, providing excellent electrical safety margins.",
+150:       "Mounting & Installation: Panel/DIN rail compatible for fast integration into automation panels.",
+151:       "Mechanical Durability: Tested for millions of operating cycles under standard load conditions.",
+152:       "Certifications: Conforms strictly to IEC 60947-4-1 and major global electrical standards.",
+153:     ],
+154:     specs: [
+155:       {
+156:         name: "Voltage",
+157:         value: "Standard",
+158:       },
+159:       {
+160:         name: "Current",
+161:         value: "6A",
+162:       },
+163:       {
+164:         name: "Poles",
+165:         value: "3P",
+166:       },
+167:       {
+168:         name: "Main Contact",
+169:         value: "3NO",
+170:       },
+171:       {
+172:         name: "Application",
+173:         value: "Motor control",
+174:       },
+175:       {
+176:         name: "Mounting",
+177:         value: "Panel/DIN rail",
+178:       },
+179:       {
+180:         name: "Auxiliary",
+181:         value: "1NC",
+182:       },
+183:     ],
+184:   },
+185:   {
+186:     id: "lc1e0610",
+187:     name: "Schneider Electric Easy TeSys LC1E0610",
+188:     brand: "Schneider",
+189:     category: "Schneider LC1E Contactors",
+190:     model: "LC1E0610",
+191:     description:
+192:       "Schneider Electric Easy TeSys LC1E0610 is a 3-pole industrial contactor designed for reliable AC-3 motor control and switching applications.",
+193:     image: "/images/lc1e0610.jpg",
+194:     features: [
+195:       "Series: Schneider EasyPact TVS (Essential motor control).",
+196:       "Model: LC1E0610 - High-value AC contactor optimized for standard industrial applications.",
+197:       "Coil Voltages Available: 24V, 48V, 110V, 220V, 380V, 415V, and 440V AC options.",
+198:       "Operational Current (AC-3): 6A continuous rating for driving motors and inductive loads.",
+199:       "Pole Configuration: 3P with 3NO ensuring robust power distribution.",
+200:       "Auxiliary Contacts: Built-in 1NO for direct integration with control signaling logic.",
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.
