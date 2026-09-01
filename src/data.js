@@ -2,21 +2,21 @@ export const brands = [
   { "name": "Enertech", "logo": "Enertech" },
   { "name": "Sibass", "logo": "Sibass" },
   { "name": "Schneider", "logo": "Schneider" },
-  { "name": "Omron", "logo": "Omron" },
-  { "name": "Ceyone", "logo": "Ceyone" },
-  { "name": "Repon", "logo": "Repon" },
+  { "name": "Omron", "logo": "/aa-enterprises/images/omron/ly2n-relay-1.png" },
+  { "name": "Ceyone", "logo": "/aa-enterprises/media/media_1788246195354.png" },
+  { "name": "Repon", "logo": "/aa-enterprises/media/media_1788246412593.png" },
   { "name": "L&T", "logo": "L&T" },
   { "name": "Resonance", "logo": "Resonance" },
   { "name": "Stroke", "logo": "Stroke" },
   { "name": "Jigo", "logo": "Jigo" },
   { "name": "Siemens", "logo": "Siemens" },
-  { "name": "J-lock", "logo": "J-lock" },
+  { "name": "J-lock", "logo": "/aa-enterprises/images/jlock_fan_220.jpg" },
   { "name": "Jaibalaji", "logo": "Jaibalaji" },
   { "name": "Honeywell", "logo": "Honeywell" },
   { "name": "BCH", "logo": "BCH" },
   { "name": "Panasonic", "logo": "Panasonic" },
-  { "name": "Allen-Bradley", "logo": "Allen-Bradley" },
-  { "name": "Ideal", "logo": "Ideal" },
+  { "name": "Allen-Bradley", "logo": "/aa-enterprises/media/media_1788246478089.png" },
+  { "name": "Ideal", "logo": "/aa-enterprises/media/media_1788247266239.png" },
   { "name": "Generic", "logo": "Generic" },
   { "name": "Power Sensor", "logo": "Power Sensor" },
   { "name": "Selec", "logo": "Selec" },
@@ -194,37 +194,37 @@ export const categories = [
   },
   {
     "name": "Ceyone Items",
-    "image": "/aa-enterprises/images/ceyone_logo.jpg",
+    "image": "/aa-enterprises/media/media_1788246195354.png",
     "description": "High-quality Ceyone electrical components including limit switches, push buttons, proximity sensors, and warning lights."
   },
   {
     "name": "Repon Items",
-    "image": "/aa-enterprises/images/repon_logo.jpg",
+    "image": "/aa-enterprises/media/media_1788246412593.png",
     "description": "High-quality Repon electrical components including limit switches, micro switches, and proximity sensors."
   },
   {
     "name": "Omron Items",
-    "image": "/aa-enterprises/images/omron_logo.jpg",
+    "image": "/aa-enterprises/images/omron/ly2n-relay-1.png",
     "description": "Omron industrial automation components, featuring durable limit switches and sensors."
   },
   {
     "name": "Allen-Bradley Items",
-    "image": "/aa-enterprises/images/ab_logo.jpg",
+    "image": "/aa-enterprises/media/media_1788246478089.png",
     "description": "Allen-Bradley industrial control components, known for rugged reliability."
   },
   {
     "name": "Crane Pendant Controls",
-    "image": "/aa-enterprises/images/pendant_logo.jpg",
+    "image": "/aa-enterprises/media/media_1788247255374.png",
     "description": "Robust and ergonomic crane pendant control stations for hoisting and overhead crane operation."
   },
   {
     "name": "Ideal Items",
-    "image": "/aa-enterprises/images/ideal_logo.jpg",
+    "image": "/aa-enterprises/media/media_1788247266239.png",
     "description": "Ideal brand electrical components and micro switches."
   },
   {
     "name": "Float Switches",
-    "image": "/aa-enterprises/images/float_switch_logo.jpg",
+    "image": "/aa-enterprises/media/media_1788247298822.png",
     "description": "Reliable liquid level control float switches for tanks and pumping stations."
   },
   {
