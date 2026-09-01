@@ -206,7 +206,7 @@ export default function Home() {
                 <h2 className="text-xs sm:text-sm font-black text-brand-primary uppercase tracking-widest">The Legacy of AA Enterprises</h2>
               </motion.div>
 
-              <motion.h3 variants={fadeUp} className="text-4xl md:text-7xl font-black text-gray-900 leading-[1.05] mb-6 sm:mb-8 tracking-tighter uppercase italic">
+              <motion.h3 variants={fadeUp} className="text-[2rem] leading-none sm:text-4xl md:text-7xl font-black text-gray-900 sm:leading-[1.05] mb-6 sm:mb-8 tracking-tighter uppercase italic">
                 The Backbone of <br /><span className="text-brand-primary">Global Manufacturing.</span>
               </motion.h3>
 
@@ -650,7 +650,7 @@ export default function Home() {
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-brand-primary/20 text-brand-primary text-[10px] sm:text-xs font-black uppercase tracking-widest mb-6 sm:mb-8 border border-brand-primary/30">
                   <Activity size={14} /> Industry 4.0 Ready
                 </div>
-                <h3 className="text-3xl md:text-6xl font-black text-white tracking-tighter mb-6 sm:mb-8 leading-[1.1] uppercase italic">
+                <h3 className="text-[1.75rem] sm:text-3xl md:text-6xl font-black text-white tracking-tighter mb-6 sm:mb-8 leading-[1.1] uppercase italic">
                   Powering The <br /><span className="text-brand-primary">Smart Factory.</span>
                 </h3>
                 <p className="text-gray-400 text-sm sm:text-lg font-medium leading-relaxed mb-8 sm:mb-10">
@@ -711,7 +711,7 @@ export default function Home() {
                 <ShieldCheck size={20} className="sm:w-6 sm:h-6 text-brand-primary" />
                 <h3 className="text-xs sm:text-sm font-black uppercase tracking-widest text-brand-primary">Quality Assurance</h3>
               </div>
-              <h4 className="text-2xl md:text-5xl font-black text-gray-900 tracking-tighter mb-4 sm:mb-6">Certified Industrial Grade.</h4>
+              <h4 className="text-[1.35rem] sm:text-2xl md:text-5xl font-black text-gray-900 tracking-tighter mb-4 sm:mb-6 leading-tight">Certified Industrial Grade.</h4>
               <p className="text-gray-600 font-medium text-sm sm:text-lg leading-relaxed">
                 AA Enterprises exclusively supplies products that comply with strict international standards including ISO, CE, RoHS, and ISI. Every dispatch is guaranteed to meet factory specifications.
               </p>

@@ -379,12 +379,12 @@ export default function About() {
               <div className="grid grid-cols-2 gap-4 sm:gap-6">
                 <div className="bg-gray-800 p-6 md:p-8 rounded-[2rem] border border-gray-700 hover:border-brand-primary/50 transition-colors">
                   <ShieldCheck size={36} className="text-brand-primary mb-4" />
-                  <h4 className="text-xl font-black text-white mb-2">Authenticity</h4>
+                  <h4 className="text-base sm:text-xl font-black text-white mb-2">Authenticity</h4>
                   <p className="text-gray-500 text-sm font-medium">OEM seals intact on every box.</p>
                 </div>
                 <div className="bg-gray-800 p-6 md:p-8 rounded-[2rem] border border-gray-700 hover:border-brand-primary/50 transition-colors mt-8 md:mt-12">
                   <Award size={36} className="text-brand-primary mb-4" />
-                  <h4 className="text-xl font-black text-white mb-2">Warranty</h4>
+                  <h4 className="text-base sm:text-xl font-black text-white mb-2">Warranty</h4>
                   <p className="text-gray-500 text-sm font-medium">Full manufacturer backing guaranteed.</p>
                 </div>
               </div>
@@ -533,12 +533,12 @@ export default function About() {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 hover:bg-white/20 transition-colors">
                     <Globe size={32} className="text-white mb-4" />
-                    <h4 className="text-xl font-bold text-white mb-2">Borderless</h4>
+                    <h4 className="text-base sm:text-xl font-bold text-white mb-2">Borderless</h4>
                     <p className="text-white/70 text-sm">Direct import logistics.</p>
                   </div>
                   <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 hover:bg-white/20 transition-colors">
                     <ShieldCheck size={32} className="text-white mb-4" />
-                    <h4 className="text-xl font-bold text-white mb-2">Certified</h4>
+                    <h4 className="text-base sm:text-xl font-bold text-white mb-2">Certified</h4>
                     <p className="text-white/70 text-sm">CE & UL marked gear.</p>
                   </div>
                 </div>
