@@ -1,7 +1,7 @@
 export const globalHeroSlides = [
   {
     isBanner: true,
-    image: "images/banner1_new.jpg",
+    image: "/aa-enterprises/images/banner1_new.jpg",
     title1: "POWERING INDUSTRY.",
     title2: "AUTOMATING TOMORROW.",
     desc: "Complete Range of Panel, Industrial Electrical & Automation Control Goods",
@@ -10,7 +10,7 @@ export const globalHeroSlides = [
   },
   {
     isBanner: true,
-    image: "images/banner2_new.jpg",
+    image: "/aa-enterprises/images/banner2_new.jpg",
     title1: "ONE STOP SOLUTION FOR",
     title2: "PANEL, INDUSTRIAL ELECTRICAL\n& AUTOMATION",
     desc: "QUALITY | RELIABILITY | INNOVATION",
@@ -19,7 +19,7 @@ export const globalHeroSlides = [
   },
   {
     isBanner: true,
-    image: "images/banner3_new.jpg",
+    image: "/aa-enterprises/images/banner3_new.jpg",
     title1: "SMART SOLUTIONS FOR",
     title2: "INDUSTRIAL GROWTH",
     desc: "Complete Range of Electrical Panel Components & Automation Products",

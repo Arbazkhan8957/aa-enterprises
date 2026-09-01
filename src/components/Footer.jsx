@@ -77,7 +77,7 @@ export default function Footer() {
               <Link to="/" className="inline-flex items-center gap-3 sm:gap-4 group mb-6">
                 <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-full overflow-hidden shadow-sm bg-white shrink-0 flex items-center justify-center border border-gray-200">
                   <img 
-                    src="images/logo.jpg" 
+                    src="/aa-enterprises/images/logo.jpg" 
                     alt="AA Enterprises Logo" 
                     className="w-full h-full object-contain p-1.5 sm:p-2 group-hover:scale-110 transition-transform duration-300"
                   />

@@ -33,19 +33,19 @@ const blogHeroSlides = [
     title: 'INDUSTRY INSIGHTS',
     subtitle: 'AA ENTERPRISES KNOWLEDGE HUB',
     desc: 'Explore practical articles, technical guides, product knowledge, safety information, and industrial insights from AA Enterprises.',
-    image: products[0]?.image || 'images/hero.png',
+    image: products[0]?.image || '/aa-enterprises/images/hero.png',
   },
   {
     title: 'TECHNICAL GUIDES',
     subtitle: 'ENGINEERING KNOWLEDGE',
     desc: 'Understand industrial components, specifications, applications, installation requirements, and product selection.',
-    image: products[1]?.image || 'images/hero.png',
+    image: products[1]?.image || '/aa-enterprises/images/hero.png',
   },
   {
     title: 'SMARTER SOURCING',
     subtitle: 'PRODUCT KNOWLEDGE',
     desc: 'Make better purchasing decisions with useful information about electrical, automation, control, and industrial products.',
-    image: products[2]?.image || 'images/hero.png',
+    image: products[2]?.image || '/aa-enterprises/images/hero.png',
   },
 ];
 

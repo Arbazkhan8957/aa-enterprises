@@ -10,7 +10,7 @@ export const blogPosts = [
     date: 'Aug 28, 2026',
     author: 'Technical Team',
     readTime: '6 min read',
-    image: products[0]?.image || 'images/hero.png',
+    image: products[0]?.image || '/aa-enterprises/images/hero.png',
     featured: true,
     content: `
       <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2000" alt="Industrial Content" class="w-full aspect-video object-cover rounded-3xl shadow-lg my-10" />
@@ -43,7 +43,7 @@ export const blogPosts = [
     date: 'Aug 16, 2026',
     author: 'Safety Department',
     readTime: '5 min read',
-    image: products[1]?.image || 'images/hero.png',
+    image: products[1]?.image || '/aa-enterprises/images/hero.png',
     featured: false,
     content: `
       <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2000" alt="Industrial Content" class="w-full aspect-video object-cover rounded-3xl shadow-lg my-10" />
@@ -75,7 +75,7 @@ export const blogPosts = [
     date: 'Aug 22, 2026',
     author: 'Automation Expert',
     readTime: '8 min read',
-    image: products[2]?.image || 'images/hero.png',
+    image: products[2]?.image || '/aa-enterprises/images/hero.png',
     featured: false,
     content: `
       <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2000" alt="Industrial Content" class="w-full aspect-video object-cover rounded-3xl shadow-lg my-10" />
@@ -108,7 +108,7 @@ export const blogPosts = [
     date: 'Aug 10, 2026',
     author: 'Product Specialist',
     readTime: '7 min read',
-    image: products[3]?.image || 'images/hero.png',
+    image: products[3]?.image || '/aa-enterprises/images/hero.png',
     featured: false,
     content: `
       <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2000" alt="Industrial Content" class="w-full aspect-video object-cover rounded-3xl shadow-lg my-10" />
@@ -146,7 +146,7 @@ export const blogPosts = [
     date: 'Aug 04, 2026',
     author: 'Innovation Team',
     readTime: '5 min read',
-    image: products[4]?.image || 'images/hero.png',
+    image: products[4]?.image || '/aa-enterprises/images/hero.png',
     featured: false,
     content: `
       <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2000" alt="Industrial Content" class="w-full aspect-video object-cover rounded-3xl shadow-lg my-10" />
@@ -173,7 +173,7 @@ export const blogPosts = [
     date: 'Jul 28, 2026',
     author: 'Technical Team',
     readTime: '5 min read',
-    image: products[5]?.image || 'images/hero.png',
+    image: products[5]?.image || '/aa-enterprises/images/hero.png',
     featured: false,
     content: `
       <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2000" alt="Industrial Content" class="w-full aspect-video object-cover rounded-3xl shadow-lg my-10" />
@@ -200,7 +200,7 @@ export const blogPosts = [
     date: 'Jul 20, 2026',
     author: 'Service Team',
     readTime: '6 min read',
-    image: products[6]?.image || 'images/hero.png',
+    image: products[6]?.image || '/aa-enterprises/images/hero.png',
     featured: false,
     content: `
       <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2000" alt="Industrial Content" class="w-full aspect-video object-cover rounded-3xl shadow-lg my-10" />
@@ -233,7 +233,7 @@ export const blogPosts = [
     date: 'Jul 12, 2026',
     author: 'Technical Team',
     readTime: '5 min read',
-    image: products[7]?.image || 'images/hero.png',
+    image: products[7]?.image || '/aa-enterprises/images/hero.png',
     featured: false,
     content: `
       <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2000" alt="Industrial Content" class="w-full aspect-video object-cover rounded-3xl shadow-lg my-10" />
@@ -262,7 +262,7 @@ export const blogPosts = [
     date: 'Jul 05, 2026',
     author: 'Thermal Engineer',
     readTime: '7 min read',
-    image: products[8]?.image || 'images/hero.png',
+    image: products[8]?.image || '/aa-enterprises/images/hero.png',
     featured: false,
     content: `
       <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2000" alt="Industrial Content" class="w-full aspect-video object-cover rounded-3xl shadow-lg my-10" />
@@ -289,7 +289,7 @@ export const blogPosts = [
     date: 'Jun 28, 2026',
     author: 'Procurement Specialist',
     readTime: '4 min read',
-    image: products[9]?.image || 'images/hero.png',
+    image: products[9]?.image || '/aa-enterprises/images/hero.png',
     featured: false,
     content: `
       <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2000" alt="Industrial Content" class="w-full aspect-video object-cover rounded-3xl shadow-lg my-10" />
@@ -316,7 +316,7 @@ export const blogPosts = [
     date: 'Jun 20, 2026',
     author: 'Design Engineer',
     readTime: '6 min read',
-    image: products[10]?.image || 'images/hero.png',
+    image: products[10]?.image || '/aa-enterprises/images/hero.png',
     featured: false,
     content: `
       <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2000" alt="Industrial Content" class="w-full aspect-video object-cover rounded-3xl shadow-lg my-10" />
@@ -345,7 +345,7 @@ export const blogPosts = [
     date: 'Jun 15, 2026',
     author: 'Automation Expert',
     readTime: '8 min read',
-    image: products[11]?.image || 'images/hero.png',
+    image: products[11]?.image || '/aa-enterprises/images/hero.png',
     featured: false,
     content: `
       <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2000" alt="Industrial Content" class="w-full aspect-video object-cover rounded-3xl shadow-lg my-10" />
@@ -372,7 +372,7 @@ export const blogPosts = [
     date: 'Jun 08, 2026',
     author: 'Product Specialist',
     readTime: '4 min read',
-    image: products[12]?.image || 'images/hero.png',
+    image: products[12]?.image || '/aa-enterprises/images/hero.png',
     featured: false,
     content: `
       <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2000" alt="Industrial Content" class="w-full aspect-video object-cover rounded-3xl shadow-lg my-10" />
@@ -399,7 +399,7 @@ export const blogPosts = [
     date: 'Jun 02, 2026',
     author: 'Power Engineer',
     readTime: '7 min read',
-    image: products[13]?.image || 'images/hero.png',
+    image: products[13]?.image || '/aa-enterprises/images/hero.png',
     featured: false,
     content: `
       <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2000" alt="Industrial Content" class="w-full aspect-video object-cover rounded-3xl shadow-lg my-10" />
@@ -427,7 +427,7 @@ export const blogPosts = [
     date: 'May 28, 2026',
     author: 'Safety Department',
     readTime: '5 min read',
-    image: products[14]?.image || 'images/hero.png',
+    image: products[14]?.image || '/aa-enterprises/images/hero.png',
     featured: false,
     content: `
       <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2000" alt="Industrial Content" class="w-full aspect-video object-cover rounded-3xl shadow-lg my-10" />
@@ -454,7 +454,7 @@ export const blogPosts = [
     date: 'May 22, 2026',
     author: 'Automation Expert',
     readTime: '6 min read',
-    image: products[0]?.image || 'images/hero.png',
+    image: products[0]?.image || '/aa-enterprises/images/hero.png',
     featured: false,
     content: `
       <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2000" alt="Industrial Content" class="w-full aspect-video object-cover rounded-3xl shadow-lg my-10" />
@@ -481,7 +481,7 @@ export const blogPosts = [
     date: 'May 15, 2026',
     author: 'Technical Team',
     readTime: '7 min read',
-    image: products[1]?.image || 'images/hero.png',
+    image: products[1]?.image || '/aa-enterprises/images/hero.png',
     featured: false,
     content: `
       <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2000" alt="Industrial Content" class="w-full aspect-video object-cover rounded-3xl shadow-lg my-10" />
@@ -508,7 +508,7 @@ export const blogPosts = [
     date: 'May 08, 2026',
     author: 'Thermal Engineer',
     readTime: '5 min read',
-    image: products[2]?.image || 'images/hero.png',
+    image: products[2]?.image || '/aa-enterprises/images/hero.png',
     featured: false,
     content: `
       <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2000" alt="Industrial Content" class="w-full aspect-video object-cover rounded-3xl shadow-lg my-10" />
@@ -535,7 +535,7 @@ export const blogPosts = [
     date: 'May 02, 2026',
     author: 'Automation Expert',
     readTime: '6 min read',
-    image: products[3]?.image || 'images/hero.png',
+    image: products[3]?.image || '/aa-enterprises/images/hero.png',
     featured: false,
     content: `
       <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2000" alt="Industrial Content" class="w-full aspect-video object-cover rounded-3xl shadow-lg my-10" />
@@ -562,7 +562,7 @@ export const blogPosts = [
     date: 'Apr 25, 2026',
     author: 'Safety Department',
     readTime: '4 min read',
-    image: products[4]?.image || 'images/hero.png',
+    image: products[4]?.image || '/aa-enterprises/images/hero.png',
     featured: false,
     content: `
       <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2000" alt="Industrial Content" class="w-full aspect-video object-cover rounded-3xl shadow-lg my-10" />
