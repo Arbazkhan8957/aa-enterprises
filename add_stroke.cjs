@@ -1,129 +1,156 @@
 const fs = require('fs');
+let data = fs.readFileSync('src/data.js', 'utf8');
 
-const dataPath = 'src/data.js';
-let data = fs.readFileSync(dataPath, 'utf8');
+// 1. Add Category if it doesn't exist
+let categoriesArrayStr = data.match(/export const categories = \[\s*([\s\S]*?)\s*\];/)[1];
+let categoriesArray = eval('[' + categoriesArrayStr + ']');
 
-const strokeBrand = `
+if (!categoriesArray.find(c => c.name === 'Stroke Electricals')) {
+  categoriesArray.push({
+    name: "Stroke Electricals",
+    image: "/images/stroke-trolley.jpg",
+    description: "High-quality industrial cable reels and electrical accessories designed for heavy-duty applications, safety, and mobility on site."
+  });
+  
+  const newCatData = `export const categories = ${JSON.stringify(categoriesArray, null, 2)};\n`;
+  data = data.replace(/export const categories = \[\s*([\s\S]*?)\s*\];/, newCatData.trim());
+}
+
+// 2. Add Products
+let productsArrayStr = data.match(/export const products = \[\s*([\s\S]*?)\s*\];/)[1];
+let productsArray = eval('[' + productsArrayStr + ']');
+
+const newStroke = [
   {
-    name: "Stroke",
-    logo: "STROKE",
-  },
-`;
-
-const strokeCategory = `
-  {
-    name: "Stroke Products",
-    image: "/images/stroke_cable_reel.jpg",
-    description: "Stroke Heavy Duty Cable Reels, Cooling Fans, Push Buttons, and MC4 Connectors.",
-  },
-`;
-
-const strokeProducts = `
-  {
-    id: "stroke_cable_reel_1",
-    name: "Stroke Heavy Duty Cable Reel",
+    id: "stroke-trolley-reel",
+    name: "Stroke Heavy Duty Trolley Cable Reel",
     brand: "Stroke",
-    category: "Stroke Products",
-    model: "Cable Reel Heavy Duty",
-    description: "Rugged and durable Heavy Duty Cable Reel by Stroke. Ideal for industrial, commercial, and construction environments needing safe and long-range power distribution.",
-    image: "/images/stroke_cable_reel.jpg",
+    category: "Stroke Electricals",
+    model: "Trolley Series",
+    description: "The Stroke Heavy Duty Trolley Cable Reel features a robust build with an integrated handle and wheels for maximum mobility. Equipped with multiple industrial blue and red sockets, it's designed to supply reliable power across large construction sites and heavy industrial environments.",
+    image: "/images/stroke-trolley.jpg",
     features: [
-      "Sturdy Construction: Built to withstand tough industrial conditions.",
-      "Multiple Sockets: Equipped with various plug points for multiple devices.",
-      "Built-in Protection: Includes MCB/safety mechanisms.",
-      "Ergonomic Handle: Easy winding and transport."
+      "Mobility: Telescopic trolley handle and sturdy wheels",
+      "Sockets: Multiple heavy-duty industrial sockets (Blue/Red)",
+      "Safety: Built-in MCB/RCCB protection window",
+      "Construction: High-impact resistant drum",
+      "Application: Construction sites, shipyards, large workshops"
     ],
     specs: [
-      { name: "Brand", value: "Stroke" },
-      { name: "Type", value: "Heavy Duty Cable Reel" }
-    ]
+      { name: "Type", value: "Trolley Cable Reel" },
+      { name: "Protection", value: "Built-in Breaker" },
+      { name: "Material", value: "High-impact Plastic/Metal" }
+    ],
+    voltage: "220V / 415V",
+    current: "16A / 32A",
+    mounting: "Portable Trolley"
   },
   {
-    id: "stroke_push_buttons_1",
-    name: "Stroke Control Push Buttons (XB2 Series)",
+    id: "stroke-standard-reel",
+    name: "Stroke Industrial Cable Reel (Standard Sockets)",
     brand: "Stroke",
-    category: "Stroke Products",
-    model: "XB2-BC31",
-    description: "Stroke industrial push buttons offering highly reliable manual control for automation panels, motor starters, and heavy machinery.",
-    image: "/images/stroke_push_buttons.jpg",
+    category: "Stroke Electricals",
+    model: "Standard Reel",
+    description: "A highly portable Stroke industrial cable reel featuring multiple standard flat/universal sockets. Built with a durable metal frame and a sturdy carrying handle, it provides convenient and safe power distribution for workshops, garages, and indoor industrial tasks.",
+    image: "/images/stroke-standard.jpg",
     features: [
-      "High Durability: Rated for millions of mechanical cycles.",
-      "Clear Colors: Available in Red, Green, Yellow, Blue, Black, White.",
-      "Easy Mounting: Standard 22mm panel cutout."
+      "Design: Hand-carried tubular metal frame",
+      "Sockets: 4x Universal/Standard flat pin sockets",
+      "Indicator: Central power LED indicator",
+      "Winding: Easy-wind handle mechanism",
+      "Application: Workshops, garages, indoor maintenance"
     ],
     specs: [
-      { name: "Model", value: "XB2 Series" },
-      { name: "Type", value: "Push Button" }
-    ]
+      { name: "Type", value: "Portable Cable Reel" },
+      { name: "Sockets", value: "4x Standard Universal" },
+      { name: "Frame", value: "Tubular Metal" }
+    ],
+    voltage: "220V",
+    current: "10A / 16A",
+    mounting: "Portable Free-standing"
   },
   {
-    id: "stroke_cooling_fan_1",
-    name: "Stroke Cooling Fan 12038ASL",
+    id: "stroke-red-reel",
+    name: "Stroke British Standard Heavy Duty Reel",
     brand: "Stroke",
-    category: "Stroke Products",
-    model: "12038ASL",
-    description: "High-performance Stroke Cooling Fan designed for continuous thermal management in electrical enclosures and control panels.",
-    image: "/images/stroke_cooling_fan.jpg",
+    category: "Stroke Electricals",
+    model: "Red Series BS",
+    description: "The Stroke Red Series Heavy Duty Cable Reel complies with British Standards (BS). It features 3 robust sockets, rust-resistant zinc-plated metal components, and a strong steel stand, making it a rugged choice for harsh outdoor and industrial power needs.",
+    image: "/images/stroke-red.jpg",
     features: [
-      "Voltage: 220V AC",
-      "Current: 0.14A",
-      "Power: 25W",
-      "Speed: 2200 RPM",
-      "Quality Control Approved."
+      "Compliance: Built to British Standards",
+      "Construction: Strong steel stand with zinc plating for rust resistance",
+      "Sockets: 3x Heavy-duty British Standard sockets",
+      "Cable: Fitted with flexible and easy-to-wind cable",
+      "Safety: Central reset/thermal cutout button"
     ],
     specs: [
-      { name: "Model", value: "12038ASL" },
-      { name: "Voltage", value: "220V AC" }
-    ]
+      { name: "Standard", value: "British Standard" },
+      { name: "Stand", value: "Steel (Rust Resistant)" },
+      { name: "Sockets", value: "3x BS Sockets" }
+    ],
+    voltage: "250V",
+    current: "13A / 16A",
+    mounting: "Portable Free-standing"
   },
   {
-    id: "stroke_mc4_connectors",
-    name: "Stroke MC4 1000V Connectors",
+    id: "stroke-orange-mcb",
+    name: "Stroke Orange Cable Reel with MCB",
     brand: "Stroke",
-    category: "Stroke Products",
-    model: "MC4 1000V",
-    description: "Professional grade Stroke MC4 solar connectors designed for safe and weatherproof DC connections in solar PV arrays.",
-    image: "/images/stroke_mc4.jpg",
+    category: "Stroke Electricals",
+    model: "Orange MCB Series",
+    description: "The Stroke Orange Series Cable Reel provides ultimate electrical safety with an integrated MCB (Miniature Circuit Breaker) and thermostat protection. Featuring 4 universal sockets and a highly visible orange drum, it is perfect for demanding industrial applications requiring strict safety protocols.",
+    image: "/images/stroke-orange.jpg",
     features: [
-      "Voltage Rating: 1000V DC.",
-      "Protection: IP67 Weatherproof.",
-      "High Conductivity: Silver-plated copper terminals.",
-      "UV Resistant housing for outdoor durability."
+      "Safety: Integrated MCB and Thermostat protection",
+      "Sockets: 4x Universal sockets (220V-16A)",
+      "Indicators: Power and Safety indicator lights",
+      "Frame: Heavy-duty metal stand with rubber feet",
+      "Visibility: High-visibility orange drum"
     ],
     specs: [
-      { name: "Model", value: "MC4" },
-      { name: "Voltage", value: "1000V" }
-    ]
+      { name: "Protection", value: "MCB + Thermostat" },
+      { name: "Sockets", value: "4x 220V 16A" },
+      { name: "Color", value: "High-Visibility Orange" }
+    ],
+    voltage: "220V",
+    current: "16A",
+    mounting: "Portable Free-standing"
   },
   {
-    id: "stroke_multi_plug",
-    name: "Stroke Industrial IP67 Multi-Plug Splitter",
-    brand: "Stroke",
-    category: "Stroke Products",
-    model: "16A-6h/220-250V",
-    description: "Stroke heavy-duty multi-plug splitter with IP67 rating, offering secure and waterproof power distribution for demanding outdoor or wet environments.",
-    image: "/images/stroke_multi_plug.jpg",
+    id: "stroke-pyf14a",
+    name: "PYF14A 14-Pin Relay Base",
+    brand: "Generic",
+    category: "Stroke Electricals",
+    model: "PYF14A",
+    description: "The PYF14A is a standard 14-pin relay socket/base designed for secure DIN rail or screw mounting. It is fully compatible with standard 4PDT industrial relays (like MY4), offering reliable screw terminals for quick and safe wiring in control panels.",
+    image: "/images/pyf14a.png",
     features: [
-      "Type: Weather Proof Plug",
-      "Rating: 16A, 220-250V",
-      "Protection: IP67 Waterproof & Dustproof",
-      "Conformity: IEC309-2 Standard"
+      "Configuration: 14-Pin Relay Base",
+      "Mounting: 35mm DIN Rail or Panel Mount via screws",
+      "Terminals: Secure screw terminals for easy wiring",
+      "Compatibility: Standard 4PDT control relays",
+      "Application: Industrial control panels, automation circuits"
     ],
     specs: [
-      { name: "Current", value: "16A" },
-      { name: "IP Rating", value: "IP67" }
-    ]
-  },
-`;
+      { name: "Pins", value: "14" },
+      { name: "Mounting", value: "DIN Rail / Screw" },
+      { name: "Compatibility", value: "4PDT Relays" }
+    ],
+    voltage: "250V",
+    current: "10A",
+    mounting: "DIN Rail / Panel"
+  }
+];
 
-// Insert brand
-data = data.replace('export const brands = [', 'export const brands = [' + strokeBrand);
+newStroke.forEach(nf => {
+  if (!productsArray.find(p => p.id === nf.id)) {
+    productsArray.push(nf);
+  }
+});
 
-// Insert category
-data = data.replace('export const categories = [', 'export const categories = [' + strokeCategory);
+const newData = `export const products = ${JSON.stringify(productsArray, null, 2)};\n`;
+data = data.replace(/export const products = \[\s*([\s\S]*?)\s*\];/, newData.trim());
 
-// Insert products
-data = data.replace('export const products = [', 'export const products = [' + strokeProducts);
-
-fs.writeFileSync(dataPath, data);
-console.log('Successfully updated data.js');
+fs.writeFileSync('src/data.js', data);
+console.log('Successfully added Stroke Category and Products!');

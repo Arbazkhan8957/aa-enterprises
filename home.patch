@@ -1,0 +1,143 @@
+Created At: 2026-08-25T14:15:55+05:30
+Completed At: 2026-08-25T14:17:44+05:30
+
+				The command exited with code 0.
+				Output:
+				<truncated 1 lines>
++          </motion.div>
++        </div>
++      </section>
++
++      {/* 5. INDUSTRIES WE EMPOWER */}
++      <section className="py-32 bg-white text-brand-dark relative overflow-hidden">
++        <div className="text-display-bg-dark">GLOBAL</div>
++        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
++          <div className="mb-24 max-w-2xl">
++            <div className="flex items-center gap-3 mb-6">
++              <div className="w-8 h-[2px] bg-[#ccff00]"></div>
++              <h2 className="text-xs font-black uppercase tracking-widest text-slate-400">Impact</h2>
++            </div>
++            <h3 className="text-display-section mb-6">Industries We <br />Empower</h3>
++            <p className="text-slate-400 text-lg font-medium">Our components form the nervous system of modern industrial infrastructure across multiple sectors.</p>
++          </div>
++
++          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
++            {[
++              { icon: <Factory size={28} />, title: "Manufacturing", color: "hover:border-[#ccff00]", desc: "Powering automated assembly lines and conveyor systems with robust contactors.", items: ["Motor Control Centers", "Packaging Machinery"] },
++              { icon: <Cpu size={28} />, title: "Automation", color: "hover:border-white", desc: "Supplying precision limits and sensors required for complex PLC logic.", items: ["Proximity Sensors", "Micro Switches"] },
++              { icon: <HardHat size={28} />, title: "Construction", color: "hover:border-gray-500", desc: "Heavy-duty switchgears designed for temporary power distribution in harsh environments.", items: ["Crane Controls", "Site Panels"] }
++            ].map((ind, idx) => (
++              <motion.div
++                key={idx}
++                initial={{ opacity: 0, y: 30 }}
++                whileInView={{ opacity: 1, y: 0 }}
++                viewport={{ once: true }}
++                transition={{ delay: idx * 0.1 }}
++                className={`glass-card p-10 ${ind.color} group`}
++              >
++                <div className="w-14 h-14 bg-brand-primary/5 rounded-full flex items-center justify-center text-brand-dark mb-8 group-hover:bg-[#ccff00] group-hover:text-black transition-colors">{ind.icon}</div>
++                <h4 className="text-2xl font-black mb-4">{ind.title}</h4>
++                <p className="text-slate-400 leading-relaxed mb-8 text-sm">{ind.desc}</p>
++                <ul className="space-y-3 border-t border-brand-primary/10 pt-6">
++                  {ind.items.map((item, i) => (
++                    <li key={i} className="flex items-center gap-3 text-sm font-medium text-gray-300">
++                      <div className="w-1.5 h-1.5 bg-gray-600 rounded-full group-hover:bg-[#ccff00] transition-colors"></div>
++                      {item}
++                    </li>
++                  ))}
++                </ul>
++              </motion.div>
++            ))}
++          </div>
++        </div>
++      </section>
++
++      {/* PREMIUM BRANDS MARQUEE (Black & White) */}
++      <section className="py-16 bg-white border-y border-brand-primary/10 overflow-hidden relative flex flex-col items-center justify-center">
++        <div className="flex w-[200%] animate-marquee">
++          {[...brands, ...brands, ...brands].map((brand, idx) => (
++            <div key={idx} className="flex-1 flex justify-center items-center px-8 sm:px-16">
++              <span className="font-black text-3xl sm:text-5xl text-gray-200 tracking-tighter uppercase hover:text-brand-dark transition-colors cursor-default">
++                {brand.logo}
++              </span>
++            </div>
+           ))}
+         </div>
+-      </div>
+-
+-      <div className="max-w-7xl mx-auto px-4 mt-20">
+-         <div className="bg-blue-900 rounded-2xl text-white p-10 flex flex-col md:flex-row items-center justify-between shadow-xl">
+-            <div className="md:w-2/3 mb-6 md:mb-0">
+-               <h2 className="text-3xl font-black mb-4">Authorized Distributor for Top Brands</h2>
+-               <p className="text-blue-100 text-lg mb-6">We provide 100% genuine industrial electrical components with full manufacturer warranty and support.</p>
+-               <div className="flex flex-wrap gap-4 bg-white/10 p-4 rounded-xl">
+-                 {brands.map((b, idx) => (
+-                   <span key={idx} className="bg-white text-blue-900 px-4 py-2 rounded-lg font-black tracking-widest uppercase text-sm shadow-sm">{b.name}</span>
+-                 ))}
+-               </div>
++      </section>
++
++      {/* MASSIVE CTA SECTION */}
++      <section className="bg-brand-lightGrey py-32 relative overflow-hidden">
++        <div className="text-display-bg">QUOTE</div>
++        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
++          <div className="glass-card p-10 md:p-16 lg:p-20 flex flex-col lg:flex-row gap-16 items-center">
++
++            <div className="lg:w-1/2">
++              <div className="flex items-center gap-3 mb-6">
++                <div className="w-8 h-[2px] bg-[#ccff00]"></div>
++                <h2 className="text-xs font-black uppercase tracking-widest text-brand-dark">Partner With The Best</h2>
++              </div>
++              <h3 className="text-4xl md:text-6xl font-black text-brand-dark leading-[1.1] mb-8 tracking-tighter">
++                Secure your <br /><span className="text-slate-400">supply chain.</span>
++              </h3>
++              <p className="text-slate-400 text-lg font-medium mb-12 max-w-md leading-relaxed">
++                Experience authentic parts, unmatched B2B pricing, and zero-day logistics across India.
++              </p>
++
++              <div className="flex gap-4">
++                <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center text-brand-dark shrink-0">
++                  <Phone size={20} />
++                </div>
++                <div>
++                  <div className="text-[10px] text-slate-400 uppercase font-bold tracking-widest mb-1">Direct Hotlines</div>
++                  <div className="font-black text-lg tracking-tight">+91 9326183962</div>
++                  <div className="font-black text-lg tracking-tight">+91 9819495892</div>
++                </div>
++              </div>
+             </div>
+-            <div className="md:w-1/3 text-center">
+-               <Link to="/quote" className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-10 rounded-xl text-lg inline-block w-full transition transform hover:-translate-y-1 shadow-lg">
+-                 Request Bulk Quote
+-               </Link>
++
++            <div className="lg:w-1/2 w-full">
++              <div className="bg-white p-8 md:p-12 rounded-[2rem] border border-brand-primary/10 shadow-premium">
++                <h3 className="text-2xl font-black text-brand-dark mb-2">Request Quote</h3>
++                <p className="text-slate-400 text-sm font-medium mb-8">Our sales team will contact you within 2 hours.</p>
++
++                <form className="space-y-6">
++                  <div>
++                    <input type="text" placeholder="Company Name" className="w-full px-6 py-4 bg-brand-lightGrey rounded-xl text-brand-dark placeholder:text-slate-400 outline-none focus:bg-brand-primary/5/10 transition-colors font-medium text-sm" />
++                  </div>
++                  <div>
++                    <input type="tel" placeholder="Phone Number" className="w-full px-6 py-4 bg-brand-lightGrey rounded-xl text-brand-dark placeholder:text-slate-400 outline-none focus:bg-brand-primary/5/10 transition-colors font-medium text-sm" />
++                  </div>
++                  <button type="button" className="btn-magnetic bg-white text-white w-full py-5 font-bold uppercase tracking-widest text-xs hover:bg-[#ccff00] hover:text-black flex items-center justify-center gap-2 group">
++                    Submit Request <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
++                  </button>
++                </form>
++              </div>
+             </div>
+-         </div>
+-      </div>
++
++          </div>
++        </div>
++      </section>
+ 
+     </div>
+   );
+ }
++
+

@@ -10,42 +10,34 @@ import ProductDetail from './pages/ProductDetail';
 import Brands from './pages/Brands';
 import Gallery from './pages/Gallery';
 import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 import Quote from './pages/Quote';
 import Contact from './pages/Contact';
+import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
 
 const PageWrapper = ({ children }) => {
-  const location = useLocation();
-  return (
-    <motion.div
-      key={location.pathname}
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -10 }}
-      transition={{ duration: 0.3 }}
-    >
-      {children}
-    </motion.div>
-  );
+  return <>{children}</>;
 };
 
 const AnimatedRoutes = () => {
-  const location = useLocation();
   return (
-    <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<PageWrapper><Home /></PageWrapper>} />
-          <Route path="about" element={<PageWrapper><About /></PageWrapper>} />
-          <Route path="products" element={<PageWrapper><Products /></PageWrapper>} />
-          <Route path="product/:id" element={<PageWrapper><ProductDetail /></PageWrapper>} />
-          <Route path="brands" element={<PageWrapper><Brands /></PageWrapper>} />
-          <Route path="gallery" element={<PageWrapper><Gallery /></PageWrapper>} />
-          <Route path="blog" element={<PageWrapper><Blog /></PageWrapper>} />
-          <Route path="quote" element={<PageWrapper><Quote /></PageWrapper>} />
-          <Route path="contact" element={<PageWrapper><Contact /></PageWrapper>} />
-        </Route>
-      </Routes>
-    </AnimatePresence>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<PageWrapper><Home /></PageWrapper>} />
+        <Route path="about" element={<PageWrapper><About /></PageWrapper>} />
+        <Route path="products" element={<PageWrapper><Products /></PageWrapper>} />
+        <Route path="product/:id" element={<PageWrapper><ProductDetail /></PageWrapper>} />
+        <Route path="brands" element={<PageWrapper><Brands /></PageWrapper>} />
+        <Route path="gallery" element={<PageWrapper><Gallery /></PageWrapper>} />
+        <Route path="blog" element={<PageWrapper><Blog /></PageWrapper>} />
+        <Route path="blog/:slug" element={<PageWrapper><BlogPost /></PageWrapper>} />
+        <Route path="quote" element={<PageWrapper><Quote /></PageWrapper>} />
+        <Route path="contact" element={<PageWrapper><Contact /></PageWrapper>} />
+        <Route path="privacy" element={<PageWrapper><Privacy /></PageWrapper>} />
+        <Route path="terms" element={<PageWrapper><Terms /></PageWrapper>} />
+      </Route>
+    </Routes>
   );
 };
 

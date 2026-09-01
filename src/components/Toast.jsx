@@ -40,7 +40,7 @@ export function ToastProvider({ children }) {
             >
               <CheckCircle2 className="text-green-500 flex-shrink-0" size={24} />
               <p className="text-white text-sm font-medium flex-grow">{toast.message}</p>
-              <button onClick={() => removeToast(toast.id)} className="text-slate-400 hover:text-slate-400 transition-colors">
+              <button onClick={() => removeToast(toast.id)} className="text-white font-semibold hover:text-white font-semibold transition-colors">
                 <X size={16} />
               </button>
             </motion.div>

@@ -141,7 +141,7 @@ const newVoltmeters = [
 
 const newProducts = [...products, ...newVoltmeters];
 
-const output = `export const brands = ${JSON.stringify(brands, null, 2)};\n\nexport const categories = ${JSON.stringify(categories, null, 2)};\n\nexport const products = ${JSON.stringify(newProducts, null, 2)};\n`;
+const output = \`export const brands = \${JSON.stringify(brands, null, 2)};\\n\\nexport const categories = \${JSON.stringify(categories, null, 2)};\\n\\nexport const products = \${JSON.stringify(newProducts, null, 2)};\\n\`;
 
 fs.writeFileSync('./src/data.js', output, 'utf-8');
 console.log('Successfully added 5 new voltmeters.');

@@ -1,1 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Clean, oversized look with increased legibility */
+    font-size: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    html {
+      font-size: 18px; /* Boost base font size on mobile for extreme visibility */
+    }
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-brand-black);
+    color: var(--color-brand-lightGrey);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  /* Custom Selection inspired by the reference */
+  ::selection {
+    background-color: #ff2a70; /* Magenta */
+    color: #ffffff;
+  }
+
+  /* Premium Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #e5e7eb;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ff2a70; /* Magenta */
+  }
+  
+  /* Dark mode scrollbar support */
+  .dark ::-webkit-scrollbar-thumb {
+    background: #333333;
+  }
+}
+
+@layer utilities {
+  .animated-gradient-border {
+    position: relative;
+  }
+
+  @media (min-width: 768px) {
+    .animated-gradient-border::after,
+    .glass-card::after,
+    .glass-card-dark::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      padding: 3px;
+      background: conic-gradient(
+        from var(--border-angle),
+        #ff2a70,
+        #3b82f6,
+        #10b981,
+        #f59e0b,
+        #8b5cf6,
+        #ff2a70
+      ) border-box;
+      -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      z-index: 50; 
+      pointer-events: none;
+      animation: spin-gradient 4s linear infinite;
+    }
+  }
+
+  .glass-nav {
+    @apply bg-white/70 backdrop-blur-xl border border-black/5;
+  }
+  
+  .glass-card {
+    @apply bg-white border border-gray-100 shadow-premium hover:shadow-premium-hover transition-all duration-500 rounded-3xl overflow-hidden relative;
+  }
+  
+  .glass-card-dark {
+    @apply bg-brand-surface border border-white/5 shadow-premium-dark transition-all duration-700 rounded-3xl overflow-hidden relative;
+  }
+
+  /* Oversized typography classes */
+  .text-display-hero {
+    @apply text-6xl md:text-8xl lg:text-[10rem] font-black tracking-tighter leading-none;
+  }
+  
+  .text-display-section {
+    @apply text-4xl md:text-6xl lg:text-8xl font-black tracking-tighter leading-tight;
+  }
+
+  .text-display-bg {
+    @apply absolute -z-10 font-black text-[#f3f4f6] select-none tracking-tighter leading-none;
+    font-size: 25vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .text-display-bg-dark {
+    @apply absolute -z-10 font-black text-[#111] select-none tracking-tighter leading-none;
+    font-size: 25vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .clip-reveal {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .btn-magnetic {
+    @apply relative overflow-hidden rounded-full font-bold transition-all duration-500 ease-out;
+  }
+
+  .btn-premium {
+    @apply relative overflow-hidden rounded-full font-bold transition-all duration-500 ease-out 
+           shadow-premium hover:shadow-peak hover:-translate-y-2 active:translate-y-0 active:scale-95 bg-brand-primary hover:bg-brand-accent text-white border-none;
+  }
+}
+
+/* Base Marquee Animation */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* --- Animated Gradient Border System --- */
+@property --border-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes spin-gradient {
+  to {
+    --border-angle: 360deg;
+  }
+}
+
+
