@@ -377,15 +377,15 @@ export default function About() {
                 </ul>
               </div>
               <div className="grid grid-cols-2 gap-4 sm:gap-6">
-                <div className="bg-gray-800 p-6 md:p-8 rounded-[2rem] border border-gray-700 hover:border-brand-primary/50 transition-colors">
-                  <ShieldCheck size={36} className="text-brand-primary mb-4" />
-                  <h4 className="text-base sm:text-xl font-black text-white mb-2">Authenticity</h4>
-                  <p className="text-gray-500 text-sm font-medium">OEM seals intact on every box.</p>
+                <div className="bg-gray-800 p-3 sm:p-6 md:p-8 flex flex-col justify-center rounded-[2rem] border border-gray-700 hover:border-brand-primary/50 transition-colors">
+                  <ShieldCheck className="text-brand-primary mb-2 sm:mb-4 w-6 h-6 sm:w-9 sm:h-9" />
+                  <h4 className="text-[0.65rem] sm:text-base md:text-xl font-black text-white mb-1 sm:mb-2 leading-tight overflow-hidden break-words">Authenticity</h4>
+                  <p className="text-gray-500 text-[0.6rem] sm:text-sm font-medium leading-tight">OEM seals intact on every box.</p>
                 </div>
-                <div className="bg-gray-800 p-6 md:p-8 rounded-[2rem] border border-gray-700 hover:border-brand-primary/50 transition-colors mt-8 md:mt-12">
-                  <Award size={36} className="text-brand-primary mb-4" />
-                  <h4 className="text-base sm:text-xl font-black text-white mb-2">Warranty</h4>
-                  <p className="text-gray-500 text-sm font-medium">Full manufacturer backing guaranteed.</p>
+                <div className="bg-gray-800 p-3 sm:p-6 md:p-8 flex flex-col justify-center rounded-[2rem] border border-gray-700 hover:border-brand-primary/50 transition-colors mt-8 md:mt-12">
+                  <Award className="text-brand-primary mb-2 sm:mb-4 w-6 h-6 sm:w-9 sm:h-9" />
+                  <h4 className="text-[0.65rem] sm:text-base md:text-xl font-black text-white mb-1 sm:mb-2 leading-tight overflow-hidden break-words">Warranty</h4>
+                  <p className="text-gray-500 text-[0.6rem] sm:text-sm font-medium leading-tight">Full manufacturer backing guaranteed.</p>
                 </div>
               </div>
             </div>
@@ -531,15 +531,15 @@ export default function About() {
                 </div>
                 
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 hover:bg-white/20 transition-colors">
-                    <Globe size={32} className="text-white mb-4" />
-                    <h4 className="text-base sm:text-xl font-bold text-white mb-2">Borderless</h4>
-                    <p className="text-white/70 text-sm">Direct import logistics.</p>
+                  <div className="bg-white/10 backdrop-blur-sm p-3 sm:p-6 flex flex-col justify-center rounded-2xl border border-white/20 hover:bg-white/20 transition-colors">
+                    <Globe className="text-white mb-2 sm:mb-4 w-6 h-6 sm:w-8 sm:h-8" />
+                    <h4 className="text-[0.65rem] sm:text-base md:text-xl font-bold text-white mb-1 sm:mb-2 leading-tight overflow-hidden break-words">Borderless</h4>
+                    <p className="text-white/70 text-[0.6rem] sm:text-sm leading-tight">Direct import logistics.</p>
                   </div>
-                  <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 hover:bg-white/20 transition-colors">
-                    <ShieldCheck size={32} className="text-white mb-4" />
-                    <h4 className="text-base sm:text-xl font-bold text-white mb-2">Certified</h4>
-                    <p className="text-white/70 text-sm">CE & UL marked gear.</p>
+                  <div className="bg-white/10 backdrop-blur-sm p-3 sm:p-6 flex flex-col justify-center rounded-2xl border border-white/20 hover:bg-white/20 transition-colors">
+                    <ShieldCheck className="text-white mb-2 sm:mb-4 w-6 h-6 sm:w-8 sm:h-8" />
+                    <h4 className="text-[0.65rem] sm:text-base md:text-xl font-bold text-white mb-1 sm:mb-2 leading-tight overflow-hidden break-words">Certified</h4>
+                    <p className="text-white/70 text-[0.6rem] sm:text-sm leading-tight">CE & UL marked gear.</p>
                   </div>
                 </div>
               </div>
