@@ -58,7 +58,7 @@ export default function About() {
                   <div className="w-12 h-12 rounded-full bg-brand-primary flex items-center justify-center">
                     <Building2 size={24} className="text-white" />
                   </div>
-                  <h4 className="text-2xl font-black">Corporate Headquarters</h4>
+                  <h4 className="text-lg sm:text-2xl font-black">Corporate Headquarters</h4>
                 </div>
                 <p className="text-gray-600 font-medium text-lg">Lohar Chawl, Mumbai - The Electrical Heart of India</p>
               </div>
@@ -74,7 +74,7 @@ export default function About() {
             <h2 className="text-sm font-black text-brand-primary uppercase tracking-widest mb-3 flex items-center gap-2">
               <span className="w-8 h-1 bg-brand-primary rounded-full"></span> Corporate Identity
             </h2>
-            <h3 className="text-2xl md:text-5xl font-black text-gray-900 mb-8 leading-tight tracking-tight">
+            <h3 className="text-[1.35rem] sm:text-2xl md:text-5xl font-black text-gray-900 mb-8 leading-tight tracking-tight">
               The Critical Link in the <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-accent">Global Supply Chain.</span>
             </h3>
             <div className="space-y-6 text-gray-600 leading-relaxed text-base sm:text-lg mb-10">
@@ -95,7 +95,7 @@ export default function About() {
         <div className="mb-40">
           <div className="text-center mb-20">
              <h2 className="text-sm font-black text-brand-primary uppercase tracking-widest mb-3">Our Guiding Principles</h2>
-             <h3 className="text-3xl md:text-6xl font-black text-gray-900 tracking-tight">The AA Enterprises Philosophy</h3>
+             <h3 className="text-2xl sm:text-3xl md:text-6xl font-black text-gray-900 tracking-tight">The AA Enterprises Philosophy</h3>
           </div>
           
           <div className="space-y-12">
@@ -111,7 +111,7 @@ export default function About() {
                 <Target size={56} />
               </div>
               <div>
-                <h4 className="text-2xl md:text-4xl font-black text-gray-900 mb-6">Our Mission</h4>
+                <h4 className="text-[1.35rem] sm:text-2xl md:text-4xl font-black text-gray-900 mb-6">Our Mission</h4>
                 <p className="text-gray-600 text-lg md:text-xl leading-relaxed">
                   To aggressively empower Indian and global industries by supplying <em><strong>authentic, high-efficiency electrical hardware</strong></em>. We are dedicated to ensuring <strong>absolute safety, maximum operational uptime, and total mechanical reliability</strong> for our clients. We refuse to compromise on the quality of the components that run your factories.
                 </p>
@@ -130,7 +130,7 @@ export default function About() {
                 <Lightbulb size={56} />
               </div>
               <div className="md:text-right">
-                <h4 className="text-2xl md:text-4xl font-black text-gray-900 mb-6">Our Vision</h4>
+                <h4 className="text-[1.35rem] sm:text-2xl md:text-4xl font-black text-gray-900 mb-6">Our Vision</h4>
                 <p className="text-gray-600 text-lg md:text-xl leading-relaxed">
                   To cement <strong>AA Enterprises</strong> as the ultimate, most <em>technologically advanced B2B partner</em> for industrial electrical solutions globally. We envision a future where procurement is seamless, logistics are instantaneous, and every industrial plant operates with <em><strong>zero downtime</strong></em> thanks to our intelligent supply network.
                 </p>
@@ -149,7 +149,7 @@ export default function About() {
                 <Fingerprint size={56} />
               </div>
               <div>
-                <h4 className="text-2xl md:text-4xl font-black text-gray-900 mb-6">Our Core Values</h4>
+                <h4 className="text-[1.35rem] sm:text-2xl md:text-4xl font-black text-gray-900 mb-6">Our Core Values</h4>
                 <ul className="text-gray-600 text-lg leading-relaxed space-y-4">
                   <li className="flex items-start gap-4"><CheckCircle2 className="text-green-500 shrink-0 mt-1" /> <strong>Unwavering Integrity:</strong> Honest, transparent pricing and business ethics in every transaction.</li>
                   <li className="flex items-start gap-4"><CheckCircle2 className="text-green-500 shrink-0 mt-1" /> <strong>Zero Tolerance for Counterfeits:</strong> We guarantee 100% genuine components, sourced strictly from authorized channels.</li>
@@ -164,7 +164,7 @@ export default function About() {
         <div className="mb-40">
           <div className="text-center mb-10 md:mb-20">
             <h2 className="text-sm font-black text-brand-primary uppercase tracking-widest mb-3">Our Expertise & Catalog</h2>
-            <h3 className="text-3xl md:text-6xl font-black text-gray-900 mb-6 tracking-tight">The AA Enterprises Ecosystem</h3>
+            <h3 className="text-2xl sm:text-3xl md:text-6xl font-black text-gray-900 mb-6 tracking-tight">The AA Enterprises Ecosystem</h3>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">We don't just sell components; we provide complete architecture across four critical domains of industrial electrical systems.</p>
           </div>
           
@@ -180,7 +180,7 @@ export default function About() {
                 <div className="w-20 h-20 rounded-2xl bg-brand-primary/10 flex items-center justify-center text-brand-primary group-hover:bg-brand-primary group-hover:text-white transition-colors">
                   <Factory size={40} />
                 </div>
-                <h4 className="text-3xl font-black text-gray-900">Motor Control & Protection</h4>
+                <h4 className="text-xl sm:text-3xl font-black text-gray-900">Motor Control & Protection</h4>
               </div>
               <p className="text-gray-600 mb-8 text-lg leading-relaxed">The heart of any industrial operation. We supply premium contactors and overload relays designed for extreme durability and precise control.</p>
               <div className="space-y-3">
@@ -208,7 +208,7 @@ export default function About() {
                 <div className="w-20 h-20 rounded-2xl bg-blue-500/10 flex items-center justify-center text-blue-500 group-hover:bg-blue-500 group-hover:text-white transition-colors">
                   <Lightbulb size={40} />
                 </div>
-                <h4 className="text-3xl font-black text-gray-900">Signaling & Indication</h4>
+                <h4 className="text-xl sm:text-3xl font-black text-gray-900">Signaling & Indication</h4>
               </div>
               <p className="text-gray-600 mb-8 text-lg leading-relaxed">Visual and acoustic feedback systems essential for human-machine interface safety, plant monitoring, and electrical diagnostics.</p>
               <div className="space-y-3">
@@ -235,7 +235,7 @@ export default function About() {
                 <div className="w-20 h-20 rounded-2xl bg-green-500/10 flex items-center justify-center text-green-500 group-hover:bg-green-500 group-hover:text-white transition-colors">
                   <Cpu size={40} />
                 </div>
-                <h4 className="text-3xl font-black text-gray-900">Automation & Sensing</h4>
+                <h4 className="text-xl sm:text-3xl font-black text-gray-900">Automation & Sensing</h4>
               </div>
               <p className="text-gray-600 mb-8 text-lg leading-relaxed">Precision inputs for complex PLC logic. We provide heavy-duty sensing equipment designed to withstand violent mechanical environments.</p>
               <div className="space-y-3">
@@ -263,7 +263,7 @@ export default function About() {
                 <div className="w-20 h-20 rounded-2xl bg-brand-primary/10 flex items-center justify-center text-brand-primary group-hover:bg-brand-primary group-hover:text-white transition-colors">
                   <Globe size={40} />
                 </div>
-                <h4 className="text-3xl font-black text-gray-900">Thermal & Infrastructure</h4>
+                <h4 className="text-xl sm:text-3xl font-black text-gray-900">Thermal & Infrastructure</h4>
               </div>
               <p className="text-gray-600 mb-8 text-lg leading-relaxed">The foundational elements that protect and connect your panels. From cooling systems to pristine wiring architecture.</p>
               <div className="space-y-3">
@@ -286,23 +286,23 @@ export default function About() {
            <div className="bg-brand-primary rounded-[3rem] p-1 md:p-2 relative overflow-hidden shadow-md animated-gradient-border">
              <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
              <div className="bg-white rounded-[2.5rem] p-6 md:p-20 relative z-10">
-               <h3 className="text-2xl md:text-5xl font-black text-gray-900 mb-6 text-center">The AA Enterprises Guarantee</h3>
+               <h3 className="text-[1.35rem] sm:text-2xl md:text-5xl font-black text-gray-900 mb-6 text-center">The AA Enterprises Guarantee</h3>
                <p className="text-center text-gray-600 text-base md:text-lg mb-10 md:mb-16 max-w-3xl mx-auto">Why we are the preferred supplier for India's largest panel builders and OEMs.</p>
                
                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
                   <div className="text-center bg-gray-50 p-8 rounded-3xl border border-gray-200">
                     <ShieldCheck size={48} className="text-brand-primary mx-auto mb-6" />
-                    <h4 className="text-2xl font-black text-gray-900 mb-4">Zero Counterfeits</h4>
+                    <h4 className="text-lg sm:text-2xl font-black text-gray-900 mb-4">Zero Counterfeits</h4>
                     <p className="text-gray-600 leading-relaxed">Every Schneider, Omron, Sibass, and Jigo product is sourced directly from authorized channels. We provide complete traceability and manufacturer warranty support.</p>
                   </div>
                   <div className="text-center bg-gray-50 p-8 rounded-3xl border border-gray-200">
                     <LineChart size={48} className="text-brand-primary mx-auto mb-6" />
-                    <h4 className="text-2xl font-black text-gray-900 mb-4">Scale & Capacity</h4>
+                    <h4 className="text-lg sm:text-2xl font-black text-gray-900 mb-4">Scale & Capacity</h4>
                     <p className="text-gray-600 leading-relaxed">Whether you are building a single control panel or outfitting an entire gigafactory, AA Enterprises has the inventory depth and logistical capacity to fulfill your BOM.</p>
                   </div>
                   <div className="text-center bg-gray-50 p-8 rounded-3xl border border-gray-200">
                     <Users size={48} className="text-brand-primary mx-auto mb-6" />
-                    <h4 className="text-2xl font-black text-gray-900 mb-4">Engineering Support</h4>
+                    <h4 className="text-lg sm:text-2xl font-black text-gray-900 mb-4">Engineering Support</h4>
                     <p className="text-gray-600 leading-relaxed">We don't just push boxes. Our sales engineers understand load ratings, tripping classes, and coil voltages to ensure you buy exactly what your circuit requires.</p>
                   </div>
                </div>
@@ -354,7 +354,7 @@ export default function About() {
             <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
               <div>
                 <h2 className="text-sm font-black text-brand-primary uppercase tracking-widest mb-3">Zero Defects</h2>
-                <h3 className="text-2xl md:text-5xl font-black text-white mb-8 leading-tight tracking-tight">
+                <h3 className="text-[1.35rem] sm:text-2xl md:text-5xl font-black text-white mb-8 leading-tight tracking-tight">
                   The Multi-Tier <br/><span className="text-brand-primary">Quality Assurance Protocol.</span>
                 </h3>
                 <p className="text-gray-400 text-lg leading-relaxed mb-8">
@@ -396,7 +396,7 @@ export default function About() {
         <div className="mb-20">
           <div className="text-center mb-16">
             <h2 className="text-sm font-black text-brand-primary uppercase tracking-widest mb-3">Supply Chain Dominance</h2>
-            <h3 className="text-2xl md:text-5xl font-black text-gray-900 mb-6 tracking-tight">Heavy Industrial Logistics Network</h3>
+            <h3 className="text-[1.35rem] sm:text-2xl md:text-5xl font-black text-gray-900 mb-6 tracking-tight">Heavy Industrial Logistics Network</h3>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">Operating from <em>Mumbai</em>, our distribution network is engineered for <strong>maximum velocity</strong>, ensuring critical automation components reach any Indian factory floor with unprecedented speed.</p>
           </div>
           
@@ -405,21 +405,21 @@ export default function About() {
               <div className="w-16 h-16 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-brand-primary group-hover:text-white transition-colors text-gray-400">
                 <Truck size={28} />
               </div>
-              <h4 className="text-xl font-black text-gray-900 mb-3">Express Nationwide Dispatch</h4>
+              <h4 className="text-base sm:text-xl font-black text-gray-900 mb-3">Express Nationwide Dispatch</h4>
               <p className="text-gray-600 font-medium">Same-day dispatch for all ready-stock items, coordinated via premier heavy-cargo logistics partners.</p>
             </div>
             <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-premium hover:shadow-peak transition-all text-center group">
               <div className="w-16 h-16 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-brand-primary group-hover:text-white transition-colors text-gray-400">
                 <Package size={28} />
               </div>
-              <h4 className="text-xl font-black text-gray-900 mb-3">Massive Warehousing</h4>
+              <h4 className="text-base sm:text-xl font-black text-gray-900 mb-3">Massive Warehousing</h4>
               <p className="text-gray-600 font-medium">Our deeply stocked central facilities hold the <em><strong>inventory depth</strong></em> required for entire plant overhauls.</p>
             </div>
             <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-premium hover:shadow-peak transition-all text-center group">
               <div className="w-16 h-16 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-brand-primary group-hover:text-white transition-colors text-gray-400">
                 <Globe size={28} />
               </div>
-              <h4 className="text-xl font-black text-gray-900 mb-3">Global Sourcing Network</h4>
+              <h4 className="text-base sm:text-xl font-black text-gray-900 mb-3">Global Sourcing Network</h4>
               <p className="text-gray-600 font-medium">Direct procurement lines with European and Asian manufacturing hubs for highly specialized components.</p>
             </div>
           </div>
@@ -429,7 +429,7 @@ export default function About() {
         <div className="mb-20">
           <div className="text-center mb-16">
             <h2 className="text-sm font-black text-brand-primary uppercase tracking-widest mb-3">Sectors We Supply</h2>
-            <h3 className="text-2xl md:text-5xl font-black text-gray-900 mb-6 tracking-tight">Industries Powered by AA Enterprises</h3>
+            <h3 className="text-[1.35rem] sm:text-2xl md:text-5xl font-black text-gray-900 mb-6 tracking-tight">Industries Powered by AA Enterprises</h3>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">We do not serve the lightweight commercial market. Our focus is strictly on <em><strong>heavy engineering</strong></em>, manufacturing, and critical infrastructure.</p>
           </div>
           
@@ -444,7 +444,7 @@ export default function About() {
                 <div className="w-14 h-14 bg-brand-primary/10 rounded-2xl flex items-center justify-center text-brand-primary group-hover:bg-brand-primary group-hover:text-white transition-colors mb-6">
                   {industry.icon}
                 </div>
-                <h4 className="text-xl font-black text-gray-900 mb-3">{industry.title}</h4>
+                <h4 className="text-base sm:text-xl font-black text-gray-900 mb-3">{industry.title}</h4>
                 <p className="text-gray-600 text-sm font-medium">{industry.desc}</p>
               </div>
             ))}
@@ -459,7 +459,7 @@ export default function About() {
                 <h2 className="text-sm font-black text-brand-primary uppercase tracking-widest mb-3 flex items-center gap-2">
                   <span className="w-8 h-1 bg-brand-primary rounded-full"></span> Panel & Automation Expertise
                 </h2>
-                <h3 className="text-2xl md:text-4xl font-black text-gray-900 mb-8 leading-tight">
+                <h3 className="text-[1.35rem] sm:text-2xl md:text-4xl font-black text-gray-900 mb-8 leading-tight">
                   Mastering the Complexity of <br/><span className="text-brand-primary">Industrial Electric Automation.</span>
                 </h3>
                 <div className="space-y-6 text-gray-600 leading-relaxed text-lg">
@@ -497,7 +497,7 @@ export default function About() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-80"></div>
                   <div className="absolute bottom-8 left-8 right-8">
-                    <h4 className="text-2xl font-black text-white mb-2">Next-Gen Control Panels</h4>
+                    <h4 className="text-lg sm:text-2xl font-black text-white mb-2">Next-Gen Control Panels</h4>
                     <p className="text-gray-300 font-medium text-sm">Powered by AA Enterprises' certified component ecosystem.</p>
                   </div>
                 </div>
@@ -516,7 +516,7 @@ export default function About() {
               <h2 className="text-sm font-black text-white/80 uppercase tracking-widest mb-3 flex items-center gap-2">
                 <span className="w-8 h-1 bg-white/80 rounded-full"></span> International Sourcing
               </h2>
-              <h3 className="text-2xl md:text-5xl font-black text-white mb-8 leading-tight tracking-tight">
+              <h3 className="text-[1.35rem] sm:text-2xl md:text-5xl font-black text-white mb-8 leading-tight tracking-tight">
                 Global Procurement for <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-white">Local Dominance.</span>
               </h3>
               
@@ -551,7 +551,7 @@ export default function About() {
         <div className="mb-20">
           <div className="text-center mb-16">
             <h2 className="text-sm font-black text-brand-primary uppercase tracking-widest mb-3">Beyond Distribution</h2>
-            <h3 className="text-2xl md:text-5xl font-black text-gray-900 mb-6 tracking-tight">Elite Technical Support</h3>
+            <h3 className="text-[1.35rem] sm:text-2xl md:text-5xl font-black text-gray-900 mb-6 tracking-tight">Elite Technical Support</h3>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">We do not just ship boxes. Our team consists of <em><strong>electrical engineers</strong></em> who understand your schematics and can assist in optimizing your BOM.</p>
           </div>
           
@@ -560,21 +560,21 @@ export default function About() {
                 <div className="w-16 h-16 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-brand-primary group-hover:text-white transition-colors">
                   <Focus size={32} />
                 </div>
-                <h4 className="text-xl font-black text-gray-900 mb-4">Load Calculation</h4>
+                <h4 className="text-base sm:text-xl font-black text-gray-900 mb-4">Load Calculation</h4>
                 <p className="text-gray-600 font-medium">Assistance in selecting the exact AC-3 or AC-1 contactor rating for your specific motor application.</p>
              </div>
              <div className="bg-white p-8 rounded-[2rem] border border-gray-100 shadow-premium hover:shadow-peak transition-all hover:-translate-y-2 group text-center mt-0 md:mt-8">
                 <div className="w-16 h-16 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-brand-primary group-hover:text-white transition-colors">
                   <Wrench size={32} />
                 </div>
-                <h4 className="text-xl font-black text-gray-900 mb-4">Cross-Referencing</h4>
+                <h4 className="text-base sm:text-xl font-black text-gray-900 mb-4">Cross-Referencing</h4>
                 <p className="text-gray-600 font-medium">Expert replacement of obsolete parts with <em><strong>modern, equivalent components</strong></em> without circuit modification.</p>
              </div>
              <div className="bg-white p-8 rounded-[2rem] border border-gray-100 shadow-premium hover:shadow-peak transition-all hover:-translate-y-2 group text-center mt-0 md:mt-16">
                 <div className="w-16 h-16 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-brand-primary group-hover:text-white transition-colors">
                   <Scale size={32} />
                 </div>
-                <h4 className="text-xl font-black text-gray-900 mb-4">BOM Optimization</h4>
+                <h4 className="text-base sm:text-xl font-black text-gray-900 mb-4">BOM Optimization</h4>
                 <p className="text-gray-600 font-medium">Value-engineering your Bill of Materials to reduce cost while maintaining absolute safety.</p>
              </div>
           </div>
@@ -584,12 +584,12 @@ export default function About() {
         <div className="mb-40">
           <div className="text-center mb-16">
             <h2 className="text-sm font-black text-brand-primary uppercase tracking-widest mb-3">Industry Trust</h2>
-            <h3 className="text-2xl md:text-5xl font-black text-gray-900 mb-6 tracking-tight">Client Endorsements</h3>
+            <h3 className="text-[1.35rem] sm:text-2xl md:text-5xl font-black text-gray-900 mb-6 tracking-tight">Client Endorsements</h3>
             <div className="flex items-center justify-center gap-2 mb-6">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="w-8 h-8 fill-yellow-400 text-yellow-400" />
               ))}
-              <span className="text-2xl font-black text-gray-900 ml-2">4.9/5</span>
+              <span className="text-lg sm:text-2xl font-black text-gray-900 ml-2">4.9/5</span>
             </div>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">Trusted by over <strong>10,000+</strong> panel builders, heavy manufacturing plants, and electrical contractors globally.</p>
           </div>
