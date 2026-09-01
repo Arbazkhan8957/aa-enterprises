@@ -176,7 +176,7 @@ export default function Home() {
             >
               <div className="aspect-[4/5] sm:aspect-[3/4] overflow-hidden rounded-[2rem] bg-[#fafafa] relative group border border-gray-100 shadow-premium hover:shadow-peak transition-all duration-500 animated-gradient-border">
                 <img
-                  src="/images/hero.png"
+                  src="images/hero.png"
                   alt="AA Enterprises Global Supply"
                   className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700 ease-out"
                 />
@@ -372,7 +372,7 @@ export default function Home() {
                 <Link to={`/products?category=${encodeURIComponent(cat.name)}`} className="flex flex-col h-full">
                   <div className="h-56 sm:h-80 overflow-hidden bg-white flex items-center justify-center relative p-6 sm:p-10 border-b border-gray-100">
                     <img
-                      src={cat.image || "/images/hero.png"}
+                      src={cat.image || "images/hero.png"}
                       alt={cat.name}
                       className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-700 ease-out relative z-10"
                     />
@@ -532,7 +532,7 @@ export default function Home() {
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="relative">
               <div className="aspect-[4/3] rounded-3xl overflow-hidden bg-gray-800 border border-gray-700 p-2 relative shadow-2xl group">
                 <div className="absolute inset-0 bg-brand-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
-                <img src="/images/hero.png" alt="Logistics Hub" className="w-full h-full object-cover rounded-2xl filter grayscale group-hover:grayscale-0 transition-all duration-700" />
+                <img src="images/hero.png" alt="Logistics Hub" className="w-full h-full object-cover rounded-2xl filter grayscale group-hover:grayscale-0 transition-all duration-700" />
                 
                 <div className="absolute bottom-6 left-6 right-6 bg-gray-900/90 backdrop-blur-md border border-gray-700 p-4 sm:p-6 rounded-2xl z-20 flex justify-between items-center">
                   <div>

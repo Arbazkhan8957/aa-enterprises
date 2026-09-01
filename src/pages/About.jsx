@@ -47,7 +47,7 @@ export default function About() {
           >
             <div className="aspect-square md:aspect-[4/3] rounded-3xl overflow-hidden shadow-lg border border-gray-200 relative group animated-gradient-border">
               <img 
-                src="/images/hero.png"
+                src="images/hero.png"
                 alt="AA Enterprises Facility" 
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 filter  opacity-80  group-hover:opacity-100"
               />

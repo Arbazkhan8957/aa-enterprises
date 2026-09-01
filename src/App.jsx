@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import Layout from './components/Layout';
 import { ToastProvider } from './components/Toast';
@@ -43,10 +43,10 @@ const AnimatedRoutes = () => {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ToastProvider>
         <AnimatedRoutes />
       </ToastProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }

@@ -28,19 +28,19 @@ const brandHeroSlides = [
     title: 'GLOBAL PARTNERS',
     subtitle: 'AUTHORIZED DISTRIBUTOR',
     desc: 'We partner directly with the world\'s most prestigious electrical OEMs to guarantee 100% genuine components and absolute supply chain integrity.',
-    image: products[0]?.image || '/images/hero.png',
+    image: products[0]?.image || 'images/hero.png',
   },
   {
     title: 'ZERO COUNTERFEITS',
     subtitle: 'UNCOMPROMISED QUALITY',
     desc: 'Every product distributed by AA Enterprises comes with complete traceability and direct manufacturer warranty support.',
-    image: products[1]?.image || '/images/hero.png',
+    image: products[1]?.image || 'images/hero.png',
   },
   {
     title: 'INDUSTRIAL',
     subtitle: 'SUPPLY NETWORK',
     desc: 'From massive contactors to precision limit switches, explore the authorized brands that form our industrial supply network.',
-    image: products[2]?.image || '/images/hero.png',
+    image: products[2]?.image || 'images/hero.png',
   },
 ];
 
@@ -109,7 +109,7 @@ const BrandLogo = ({ brand, className, smallFallback = false }) => {
     );
   }
 
-  const src = brand.logo.includes('/') ? brand.logo : `/images/${brand.logo.toLowerCase()}.png`;
+  const src = brand.logo.includes('/') ? brand.logo : `images/${brand.logo.toLowerCase()}.png`;
 
   return (
     <img 
@@ -513,7 +513,7 @@ export default function Brands() {
             </div>
             
             <div className="relative h-[300px] sm:h-[500px] rounded-[3rem] overflow-hidden border border-gray-700 shadow-2xl group">
-               <img src="/images/lc1e_family.jpg" alt="Technical Support" className="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-1000 mix-blend-luminosity group-hover:mix-blend-normal" />
+               <img src="images/lc1e_family.jpg" alt="Technical Support" className="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-1000 mix-blend-luminosity group-hover:mix-blend-normal" />
                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent"></div>
                <div className="absolute bottom-6 sm:bottom-8 left-6 sm:left-8 right-6 sm:right-8">
                   <div className="bg-brand-primary/10 border border-brand-primary/30 backdrop-blur-md p-6 rounded-2xl">

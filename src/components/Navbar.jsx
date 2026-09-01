@@ -100,7 +100,7 @@ export default function Navbar() {
             <Link to="/" className="flex items-center gap-3 group relative z-10 shrink-0 py-1 mr-2 xl:mr-6">
               <div className="w-11 h-11 sm:w-14 sm:h-14 2xl:w-16 2xl:h-16 rounded-full overflow-hidden shadow-sm bg-white shrink-0 flex items-center justify-center border border-gray-200">
                 <img 
-                  src="/images/logo.jpg" 
+                  src="images/logo.jpg" 
                   alt="AA Enterprises Logo" 
                   className="w-full h-full object-contain p-1 sm:p-1.5 group-hover:scale-110 transition-transform duration-300"
                 />

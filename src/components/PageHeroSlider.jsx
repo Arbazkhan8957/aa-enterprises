@@ -3,9 +3,9 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const bannerImages = [
-  "/images/banner1.jpg",
-  "/images/banner2.jpg",
-  "/images/banner3.jpg"
+  "images/banner1.jpg",
+  "images/banner2.jpg",
+  "images/banner3.jpg"
 ];
 
 export default function PageHeroSlider() {
